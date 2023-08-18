@@ -8,19 +8,24 @@
     {% extends "template.html" %}
     {% block content %}
 
+    <img src="../static/images/x-ray-icon.png" alt="Chest x-ray icon" width="450px">
+
     <form action="/predict" method="post" enctype="multipart/form-data">
-        <label for="image">Upload Image</label>
-        <input id="image" name="image" type="file" accept="image/jpg, image/jpeg">
+        <label for="image">
+            Upload Image
+            <br>
+            <input id="image" name="image" type="file" accept="image/jpg, image/jpeg">
+        </label>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="error_message">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <br>
         <input type="submit" value="Upload">
     </form>
-
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-                <p class="error_message">{{ message }}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
 
     {% endblock %}
 </body>
