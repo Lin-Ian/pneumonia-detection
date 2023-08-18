@@ -5,6 +5,8 @@
     <title>Home</title>
 </head>
 <body>
+    {% extends "template.html" %}
+    {% block content %}
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
@@ -18,5 +20,7 @@
         <input id="image" name="image" type="file" accept="image/jpg, image/jpeg">
         <input type="submit" value="Upload">
     </form>
+
+    {% endblock %}
 </body>
 </html>

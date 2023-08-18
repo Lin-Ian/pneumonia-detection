@@ -5,13 +5,17 @@
     <title>Prediction</title>
 </head>
 <body>
-<figure>
-    <img src="data:image/jpeg;base64,{{ img_data }}" alt="Predicted {{prediction}} chest x-ray" width="500px">
-    <figcaption>
-        {{prediction}}
-        <br>
-        Normal Confidence: {{normal_confidence}} Pneumonia Confidence: {{pneumonia_confidence}}
-    </figcaption>
-</figure>
+    {% extends "template.html" %}
+    {% block content %}
+    <figure>
+        <img src="data:image/jpeg;base64,{{ img_data }}" alt="Predicted {{prediction}} chest x-ray" width="500px">
+        <figcaption>
+            {{prediction}}
+            <br>
+            Normal Confidence: {{normal_confidence}} Pneumonia Confidence: {{pneumonia_confidence}}
+        </figcaption>
+    </figure>
+
+    {% endblock %}
 </body>
 </html>
