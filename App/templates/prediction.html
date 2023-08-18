@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Prediction</title>
 </head>
 <body>
-
+<figure>
+    <img src="data:image/jpeg;base64,{{ img_data }}" alt="Predicted {{prediction}} chest x-ray" width="500px">
+    <figcaption>
+        {{prediction}}
+        <br>
+        Normal Confidence: {{normal_confidence}} Pneumonia Confidence: {{pneumonia_confidence}}
+    </figcaption>
+</figure>
 </body>
 </html>
