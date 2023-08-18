@@ -10,9 +10,12 @@
     <figure>
         <img src="data:image/jpeg;base64,{{ img_data }}" alt="Predicted {{prediction}} chest x-ray" width="500px">
         <figcaption>
-            {{prediction}}
-            <br>
-            Normal Confidence: {{normal_confidence}} Pneumonia Confidence: {{pneumonia_confidence}}
+            <div class="prediction">
+                {{prediction}}
+            </div>
+            <div class="confidence">
+                Normal Confidence: {{normal_confidence}} Pneumonia Confidence: {{pneumonia_confidence}}
+            </div>
         </figcaption>
     </figure>
 
