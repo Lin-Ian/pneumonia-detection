@@ -32,7 +32,7 @@ def predict_image(model, filename):
 
 def main():
     # Load model
-    model = load_model('model.h5')
+    model = load_model('App/model.h5')
 
     # Image classes in images directory
     image_classes = os.listdir('images')
