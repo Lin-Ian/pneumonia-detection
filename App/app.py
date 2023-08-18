@@ -15,8 +15,8 @@ def home():
     return render_template('home.html')
 
 
-@app.route("/upload", methods=['POST', 'GET'])
-def upload():
+@app.route("/predict", methods=['POST', 'GET'])
+def predict():
     # Get uploaded image
     image = request.files['image']
     image_name = image.filename
