@@ -49,7 +49,7 @@ def predict():
                                normal_confidence=normal_confidence, pneumonia_confidence=pneumonia_confidence)
 
     except FileNotFoundError:
-        flash('Image Missing')
+        flash('Chest X-Ray Image Required')
         return redirect(url_for('home'))
 
 
