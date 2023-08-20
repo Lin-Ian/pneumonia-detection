@@ -6,8 +6,7 @@ body {
 
     background: #221F1F;
 
-    font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Inter', sans-serif;
 }
 
 h1 {
@@ -18,7 +17,7 @@ h1 {
 
 .error_message {
     color: #F5F5F1;
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -32,15 +31,16 @@ form label {
 }
 
 form input[type=file] {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+
     border: none;
 
     font-size: 24px;
-
 }
 
 form input::file-selector-button {
+    font-family: 'Open Sans', 'Inter', sans-serif;
+
     font-weight: bold;
     color: #221F1F;
     border-radius: 5px;
@@ -53,8 +53,7 @@ form input::file-selector-button {
 
 
 form input[type=submit] {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Inter', sans-serif;
 
     background-color: #F5F5F1;
     border: none;
@@ -63,7 +62,6 @@ form input[type=submit] {
     font-size: 24px;
     margin: 10px 10px 20px;
     padding: 10px;
-
 }
 
 figcaption {
