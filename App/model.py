@@ -23,6 +23,6 @@ def predict_image(model, filename):
 
     # Output prediction
     if normal_confidence > pneumonia_confidence:
-        return "normal", normal_confidence, pneumonia_confidence
+        return "Chest X-Ray is Normal", normal_confidence, pneumonia_confidence
     elif normal_confidence <= pneumonia_confidence:
-        return "pneumonia", normal_confidence, pneumonia_confidence
+        return "Pneumonia Detected in Chest X-Ray", normal_confidence, pneumonia_confidence
