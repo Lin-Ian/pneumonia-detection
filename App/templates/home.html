@@ -8,14 +8,18 @@
     {% extends "template.html" %}
     {% block content %}
 
+    <!--Pneumonia Detection Icon-->
     <img src="../static/images/x-ray-icon.png" alt="Chest x-ray icon" width="450px">
 
+    <!--Upload Image Form-->
     <form action="/predict" method="post" enctype="multipart/form-data">
         <label for="image">
             Upload Chest X-Ray Image
             <br>
             <input id="image" name="image" type="file" accept="image/jpg, image/jpeg">
         </label>
+
+        <!--Display Error Message-->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
@@ -23,7 +27,10 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
+
         <br>
+
+        <!--Upload Button-->
         <input type="submit" value="Upload">
     </form>
 

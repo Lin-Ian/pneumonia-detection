@@ -7,12 +7,19 @@
 <body>
     {% extends "template.html" %}
     {% block content %}
+
+    <!--Display Uploaded Image and Diagnosis-->
     <figure>
+        <!--Chest X-Ray Image-->
         <img src="data:image/jpeg;base64,{{ img_data }}" alt="Predicted {{prediction}} chest x-ray" width="500px">
+
+        <!--Image Caption-->
         <figcaption>
+            <!--Prediction-->
             <div class="prediction">
                 {{prediction}}
             </div>
+            <!--Prediction Confidence-->
             <div class="confidence">
                 Normal Confidence: {{normal_confidence}}
                 <br>
