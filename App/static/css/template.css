@@ -43,6 +43,7 @@ form input::file-selector-button {
 
     font-weight: bold;
     color: #221F1F;
+    border: none;
     border-radius: 5px;
 
     font-size: 24px;
@@ -77,12 +78,22 @@ figcaption .confidence {
     font-size: 24px;
 }
 
-a, a:visited {
-    font-size: 20px;
-    color: #F5F5F1;
-    text-decoration: none;
+button {
+    background: #F5F5F1;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    color: #221F1F;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
 }
 
+a, a:visited {
+    font-size: 20px;
+    color: #221F1F;
+    text-decoration: none;
+}
 
 footer p {
     color: #F5F5F1;
