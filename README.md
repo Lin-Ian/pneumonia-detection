@@ -14,11 +14,15 @@ This project is created with:
 ```
 $ git clone https://github.com/Lin-Ian/pneumonia-detection.git
 ```
-2. Install Requirements
+2. Install requirements
 ```
 pip install -r requirements.txt
 ```
-3. Run the application
+3. Navigate to the application directory
+```
+cd .\App\
+```
+4. Run the application
 ```
 py app.py
 ```
