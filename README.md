@@ -9,6 +9,21 @@ This project is created with:
 - VGG16 model
 - Google Colab
 
+## Installation
+1. Clone the repository
+```
+$ git clone https://github.com/Lin-Ian/pneumonia-detection.git
+```
+2. Install Requirements
+```
+pip install -r requirements.txt
+```
+3. Run the application
+```
+py app.py
+```
+Open the localhost link, and you're ready to start detecting pneumonia in chest x-ray images
+
 ## Challenges
 The original Kaggle dataset have a very small validation dataset size.
 To improve the neural network performance, I had to increase the validation dataset size.
